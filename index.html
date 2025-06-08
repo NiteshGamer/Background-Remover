@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Remover</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Background Remover</h1>
+    <div class="upload-box">
+      <input type="file" id="upload" accept="image/*" />
+      <button id="remove-bg-btn">Remove Background</button>
+    </div>
+    <div class="preview">
+      <div>
+        <h3>Original</h3>
+        <img id="original-img" />
+      </div>
+      <div>
+        <h3>Removed BG</h3>
+        <img id="result-img" />
+      </div>
+    </div>
+    <div id="loading">Processing...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
